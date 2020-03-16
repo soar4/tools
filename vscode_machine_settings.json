@@ -1,0 +1,23 @@
+{
+    "goOutliner.enableDebugChannel": true,
+    "goOutliner.extendExplorerTab": true,
+    "go.gopath": "/data/gaofei/go",
+    "go.goroot": "/usr/local/go",
+    "go.languageServerExperimentalFeatures": {
+        "format": true,
+        "autoComplete": true,
+        "rename": true,
+        "goToDefinition": true,
+        "hover": true,
+        "signatureHelp": true,
+        "goToTypeDefinition": true,
+        "goToImplementation": true,
+        "documentSymbols": true,
+        "workspaceSymbols": true,
+        "findReferences": true,
+        "diagnostics": true,
+        "documentLink": true
+      },
+    "go.gotoSymbol.includeImports": true,
+    "go.inferGopath": true
+}

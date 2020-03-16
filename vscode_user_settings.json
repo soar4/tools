@@ -1,0 +1,64 @@
+{
+    "files.eol": "\n",
+    "files.exclude": {
+        "**/.git*": true,
+        "*.o": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/*.pyc": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
+    },
+    "python.linting.pylintArgs": [
+        "--errors-only"
+    ],
+    "window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}${appName}",
+    // "window.title": "${rootPath}",
+    "explorer.confirmDelete": false,
+    "window.zoomLevel": 0,
+    "sync.gist": "53984cf04a0c73211a2ca343d1801899",
+    "git.autofetch": true,
+    "files.trimTrailingWhitespace": true,
+    "codegnuglobal.executable": "D:\\bin\\gtags.exe",
+    "codegnuglobal.encoding": "utf8",
+    "go.buildOnSave": "off",
+    "go.vetOnSave": "package",
+    "go.buildTags": "",
+    "go.buildFlags": [],
+    "go.lintFlags": [
+        "-min_confidence 100.0"
+    ],
+    "go.vetFlags": [],
+    "go.coverOnSave": false,
+    "go.formatOnSave": true,
+    "go.goroot": "C:\\Go",
+    // "go.gopath": "${rootPath}",
+    "go.gopath": "C:\\Users\\x\\go",
+    "go.gocodeAutoBuild": false,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.startupEditor": "welcomePage",
+    "C_Cpp.updateChannel": "Insiders",
+    "cmake.configureOnOpen": false,
+    "remote.SSH.showLoginTerminal": true,
+    "team.showWelcomeMessage": false,
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "go.autocompleteUnimportedPackages": true,
+    "go.gotoSymbol.includeGoroot": true,
+    "goOutliner.enableDebugChannel": true,
+    "goOutliner.extendExplorerTab": true,
+    "go.lintOnSave": "off",
+    "[cpp]": {},
+    "[go]": {
+        "editor.formatOnSave": true
+    },
+    "go.gotoSymbol.includeImports": true,
+    "[proto3]": {
+        "editor.defaultFormatter": "zxh404.vscode-proto3"
+    },
+    "editor.formatOnPaste": true,
+    "clang-format.language.apex.enable": false,
+    "clang-format.language.c.enable": false,
+    "clang-format.language.cpp.enable": false,
+    "clang-format.language.cuda.enable": false,
+    "todo-tree.tree.showScanModeButton": false,
+}
