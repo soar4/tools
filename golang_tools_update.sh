@@ -39,9 +39,10 @@ UpdatePackage mod
 InstallGoPkg() {
     local pkg="$1"
     fecho "go install $pkg"
-    go install "$pkg"
+    go install -i "$pkg"
 }
 
+InstallGoPkg golang.org/x/tools/cmd/present
 InstallGoPkg golang.org/x/tools/cmd/auth/gitauth
 InstallGoPkg golang.org/x/tools/cmd/auth/cookieauth
 InstallGoPkg golang.org/x/tools/cmd/auth/authtest
@@ -65,7 +66,6 @@ InstallGoPkg golang.org/x/tools/cmd/gotype
 InstallGoPkg golang.org/x/tools/cmd/goyacc
 InstallGoPkg golang.org/x/tools/cmd/guru
 InstallGoPkg golang.org/x/tools/cmd/html2article
-InstallGoPkg golang.org/x/tools/cmd/present
 InstallGoPkg golang.org/x/tools/cmd/splitdwarf
 InstallGoPkg golang.org/x/tools/cmd/ssadump
 InstallGoPkg golang.org/x/tools/cmd/stress
