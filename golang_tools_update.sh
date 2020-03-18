@@ -36,10 +36,13 @@ UpdatePackage crypto
 UpdatePackage sys
 UpdatePackage mod
 
+cd $GOPATH/src || exit 1
 InstallGoPkg() {
     local pkg="$1"
     fecho "go install $pkg"
-    go install -i "$pkg"
+    cd $pkg || exit 1
+    go install
+    cd -
 }
 
 InstallGoPkg golang.org/x/tools/cmd/present
