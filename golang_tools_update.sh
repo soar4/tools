@@ -36,6 +36,22 @@ UpdatePackage crypto
 UpdatePackage sys
 UpdatePackage mod
 
+InstallDir="$GOPATH/src/github.com"
+InstallGitTools() {
+    local repo="$1"
+    local name="$2"
+	local installPath="$3"
+    if [ ! -e "$InstallDir/$name" ]; then
+        cd $InstallDir || exit 1
+        git clone "$repo" "$name" 
+    fi
+    cd $InstallDir/$installPath || exit 1
+    go install
+	cd -
+}
+
+InstallGitTools "https://github.com/go-delve/delve.git" "delve" "delve/cmd/dlv"
+
 cd $GOPATH/src || exit 1
 InstallGoPkg() {
     local pkg="$1"
